@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 0px;
+    background-color: transparent;
+    z-index: 1000;
+
+}
+
+/* Navigation bar: Logo and Image  */
+#logo {
+    margin: 2px 18px;
+}
+
+#logo img {
+    margin: 1px 2px;
+    height: 85px;
+}
+
+/* #name {
+    margin: 2px 4px;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    padding: 1px -15px;
+    border-radius: 15px;
+} */
+
+/* Navigation bar: List styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-left: 850px;
+}
+
+#navbar::before {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4srem;
+
+}
+
+#navbar ul li a {
+    color: rgb(66, 73, 180);
+    padding: 1px 21px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(161, 127, 127);
+
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 450px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(bg.3.webp) no-repeat center center/cover;
+    position: absolute;
+    height: 78%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.8;
+}
+
+/* About us   */
+#About {
+    display: block;
+    width: 80%;
+    padding: 85px 150px;
+    /* flex-direction: column;
+    padding: 9px 450px;
+    height: 690px;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+#About h1 {
+    color: rgb(66, 73, 180);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.6rem;
+    padding-top: 55px;
+}
+
+#About p {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-top: 0px;
+    line-height: 1.4;
+}
+
+/* Objective Boxes */
+h1 {
+    color: rgb(66, 73, 180);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.6rem;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+#Objectives {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 20%;
+    /* Adjust padding to control space from left and right */
+}
+
+.box {
+    border: 2px solid rgb(66, 73, 180);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    /* Adjust width based on content */
+    height: 280px;
+    /* Adjust height as needed */
+    margin: 0px 20px;
+    position: relative;
+}
+
+.box p {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    color: black;
+    line-height: 1.3;
+    padding-top: 30px;
+}
+
+.box img {
+    position: absolute;
+    /* Position the image absolutely */
+    top: 10px;
+    /* Adjust top position to align with text */
+    left: 50%;
+    /* Center the image horizontally */
+    transform: translateX(-50%);
+    /* Center the image horizontally */
+    height: 50px;
+    /* Set height of the image */
+    width: auto;
+    /* Maintain aspect ratio */
+    z-index: 1;
+    /* Ensure image is above text */
+}
+
+/* COMPLAINT PORTAL  */
+
+#Complaints {
+    display: block;
+    width: 80%;
+    padding: 85px 150px;
+    /* flex-direction: column;
+    padding: 9px 450px;
+    height: 690px;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+#Complaints h1 {
+    color: rgb(66, 73, 180);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.6rem;
+    padding-top: 5px;
+}
+
+#Complaints p {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-top: 0px;
+    line-height: 1.4;
+}
+#Complaints a {
+    font-family: 'Roboto', 'sans-serif', arial;
+    color: rgb(66, 73, 180);
+    text-decoration: none;
+}
+#Complaints .complaint-link {
+    color: red;
+    font-family: 'Roboto', 'sans-serif', arial;
+    text-decoration: none; /* Remove underline */
+    animation: blink-animation 1s infinite; /* Apply blinking animation */
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* GALLERY PICTURES SECTION */
+#Gallery {
+        display: block;
+        width: 80%;
+        padding: 15px 150px;
+        /* flex-direction: column;
+        padding: 9px 450px;
+        height: 690px;
+        justify-content: center;
+        align-items: center; */  
+    
+}
+#Gallery h1 {
+    color: rgb(66, 73, 180);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.6rem;
+}
+#Gallery {
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 20px); /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+.gallery-item img.expanded {
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    cursor: zoom-out;
+}
+.gallery-item img.blurred {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
+
+/* KEY OFFICALS SECTION */
+#Key {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 9px 10px;
+    justify-content: center;
+    align-items: center; 
+
+}
+#Key h1 {
+color: rgb(66, 73, 180);
+text-align: center;
+font-family: 'Roboto', 'sans-serif', arial;
+font-size: 1.6rem;
+padding-top: 60px;
+padding-left: 120px;
+}
+
+#Key .key-container{
+    display: flex;
+    flex-direction: row;
+    padding-right: 450px;
+    justify-content: flex-start;
+}
+#Key .key-container img{
+    padding-right: 150px;
+    padding-top: 50px;
+}
+#Key .key-container h5{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(17, 16, 16);
+    font-family: 'Roboto', 'sans-serif', arial;
+}
+#Key .key-container p{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(17, 16, 16);
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 0.7rem;
+    padding-bottom: 60px;
+}
+
+/* CONTACT US SECTION  */
+#contact {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(184, 178, 178);
+
+}
+#contact h1 {
+color: rgb(66, 73, 180);
+text-align: center;
+font-family: 'Roboto', 'sans-serif', arial;
+font-size: 1.6rem;
+}
+
+#contact .contact1{
+    display: flex;
+    padding-right: 100px;
+}
+#contact .contact1 .map{
+    padding-left: 170px;
+    padding-right: 110px;
+    width: 30%;
+    padding-bottom: 30px;
+
+}
+#contact.map img{
+    padding-top: 50px;
+    padding-right: 170px;
+}
+#contact .contact1 .location {
+    padding-left: 10px;
+    padding-right: 110px;
+    width: 60%;
+    padding-bottom: 30px;
+}
+#contact .location h4{
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 60px;
+    font-family: 'Roboto', 'sans-serif', arial;
+    color: rgb(17, 16, 16);
+} 
+#contact .loaction p{
+    font-family: 'Roboto', 'sans-serif', arial;
+    line-height: 1.4;
+    color: rgb(17, 16, 16);;
+}
+#contact .contact1 .book{
+    padding-left: 30px;
+    width: 60%;
+    padding-bottom: 30px;
+
+}
+#contact .book h4{
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-family: 'Roboto', 'sans-serif', arial;
+    color: rgb(17, 16, 16);;
+
+}
+#contact .book p{
+    font-family: 'Roboto', 'sans-serif', arial;
+    line-height: 1.4;
+    color: rgb(17, 16, 16);
+}
+
+/* Footer */
+footer{
+    background-color:  rgb(77, 73, 73);
+    color: rgb(17, 16, 16);
+    padding: 24px 40px;
+    font-family: 'Roboto', 'sans-serif', arial;
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', 'sans-serif', arial;
+    background-color: #f2f2f2; /* Set background color of the page */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 50px auto;
+}
+
+h2 {
+    font-family: 'Roboto', 'sans-serif', arial;
+    color: #4285f4; /* Set blue color for the heading */
+    text-align: center;
+    background-color: white;
+    border-top: 6px solid #4285f4; /* Blue color border on the top */
+    border-left: 1px solid #b9b4b4; /* Black color border on the left */
+    border-right: 1px solid #b9b4b4; /* Black color border on the right */
+    border-bottom: 1px solid #b9b4b4; /* Black color border on the bottom */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 10px;
+}
+.box {
+    border: 1px solid #b9b4b4; /* Black color border */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Adjusted padding */
+    margin-top: 30px;
+    background-color: white;
+}
+
+label {
+    font-family: 'Roboto', 'sans-serif', arial;
+    display: block;
+    margin-bottom: 10px;
+    color: #131111; /* Set black color for labels */
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: 'Roboto', 'sans-serif', arial;
+    border-bottom: 1px solid #b9b4b4; /* Add bottom border */
+    box-sizing: border-box;
+    margin-top: 5px; /* Add some spacing between input fields */
+}
+
+button {
+    font-family: 'Roboto', 'sans-serif', arial;
+    background-color: #4285f4; /* Blue color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px; /* Add some spacing above the button */
+}
+
+button:hover {
+    background-color: rgb(161, 127, 127); /* Darker shade of blue on hover */
+    color: white;
+}
+button#clearBtn {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure the clear button appears in front of the submit button */
+}
+
+button#clearBtn:hover {
+    text-decoration: underline;
+}
+

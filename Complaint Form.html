@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPLAINT FORM </title>
+    <link rel="stylesheet" href="complaintform.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h2>UAF STUDENT COMPLAINT FORM FOR REGULAR ON CAMPUS STUDENTS</h2>
+            <form action="submit_complaint.php" method="post">
+            <div class="box">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="box">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+            </div>
+
+            <div class="box">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+            </div>
+
+            <div class="box">
+                <label for="agNumber">Ag Number:</label>
+                <input type="text" id="agNumber" name="agNumber" placeholder="Enter your Ag number">
+            </div>
+
+            <div class="box">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </div>
+
+            <div class="box">
+                <label for="cnic">CNIC Number:</label>
+                <input type="text" id="cnic" name="cnic" placeholder="Enter your CNIC number">
+            </div>
+
+            <!-- Add more boxes for other information -->
+            <div class="box">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Enter your department">
+
+            </div>
+
+            <div class="box">
+                <label for="session">Session:</label>
+                <input type="text" id="session" name="session" placeholder="Enter your session">
+
+            </div>
+
+            <div class="box">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" placeholder="Enter your degree">
+
+            </div>
+
+            <div class="box">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" placeholder="Enter your semester">
+
+            </div>
+
+            <div class="box">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number">
+
+            </div>
+
+            <div class="box">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+
+            </div>
+
+            <div class="box">
+                <label for="hostelite">Hostelite (Yes or No):</label>
+                <input type="text" id="hostelite" name="hostelite" placeholder="Yes or No">
+
+            </div>
+
+            <div class="box">
+                <label for="hostelName">Hostel Name:</label>
+                <input type="text" id="hostelName" name="hostelName" placeholder="Enter your hostel name">
+
+            </div>
+
+            <div class="box">
+                <label for="roomNumber">Room Number:</label>
+                <input type="text" id="roomNumber" name="roomNumber" placeholder="Enter your room number">
+
+            </div>
+
+
+            <div class="box">
+                <label for="complaint">Complaint Box:</label>
+                <textarea id="complaint" name="complaint" placeholder="Enter your complaint"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <!-- Clear Form button -->
+    <button type="button" id="clearButton">Clear Form</button>
+</form>
+
+        </div>
+
+
+        <script>
+    // Function to clear all input fields
+    function clearForm() {
+        var inputFields = document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"]');
+        inputFields.forEach(function(field) {
+            field.value = '';
+        });
+    }
+
+    // Add event listener to Clear Form button
+    document.getElementById('clearButton').addEventListener('click', clearForm);
+</script>
+
+    </body>
+
+</html>

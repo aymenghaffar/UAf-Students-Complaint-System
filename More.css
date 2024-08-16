@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+
+}
+
+/* Navigation bar: Logo and Image  */
+#logo {
+    margin: 2px 18px;
+}
+
+#logo img {
+    margin: 15px 155px;
+    height: 85px;
+}
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-left: 600px;
+}
+
+#navbar::before {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4srem;
+
+}
+
+#navbar ul li a {
+    color: rgb(66, 73, 180);
+    padding: 1px 21px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(161, 127, 127);
+
+}
+
+/* COMPLAINT PORTAL  */
+
+#Complaints {
+    display: flex;
+    width: 80%;
+    padding: 85px 150px;
+    flex-direction: column;
+    padding: 9px 150px;
+    height: 490px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Complaints h1 {
+    color: rgb(66, 73, 180);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.6rem;
+    padding-top: 5px;
+}
+
+#Complaints p {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.7;
+}
+#Complaints p2 {
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.7;
+    
+}
+
+/* COMPLAINT PROCESS */
+
+#process {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 0px 150px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#process h1 {
+    color: rgb(59, 55, 55);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', ;
+    font-size: 1.4rem;
+    padding-top: 0px;
+}
+#process p {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Roboto', 'sans-serif', arial;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.7;
+}
+#process h3 {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif', arial;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+#process p2 {
+    color: rgb(17, 16, 16);
+    font-size: 1.0rem;
+    padding-left: 70px;
+    padding-right: 50px;
+    font-family: 'Roboto', 'sans-serif', arial;
+    line-height: 1.9;
+}
+
+/* FAQ's */
+#FAQs {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 9px 150px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* #FAQs h3{
+margin-right:40% ;
+padding-top:15px ;
+font-size: 1.1rem;
+font-family:'Roboto', 'sans-serif', arial ;
+color: rgb(17, 16, 16);
+}
+#FAQs p{
+padding-left:90px;
+font-size: 1.0rem;
+font-family:'Roboto', 'sans-serif', arial ;
+color: rgb(17, 16, 16);
+line-height: 1.4;
+} */
+
+#FAQs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .h-FAQS {
+    font-weight: bold;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    font-family:'Roboto', 'sans-serif', arial ;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-left: 500px;
+    align-items: center;
+    text-decoration: underline;
+  }
+
+  h3 {
+    margin: 15px 50px;
+    font-family:'Roboto', 'sans-serif', arial ;
+    font-size: 1.1rem;
+    color: rgb(17, 16, 16);
+  }
+p {
+    margin: 0px 50px;
+    font-family:'Roboto', 'sans-serif', arial ;
+    color: rgb(17, 16, 16);
+    font-size: 1.0rem;
+    line-height: 1.4;
+  }
